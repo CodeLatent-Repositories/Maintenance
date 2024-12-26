@@ -1,9 +1,11 @@
-/*#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}*/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+
+body{
+  color:white;
+  background-color: black;
+}
 
 
 header{
@@ -19,8 +21,7 @@ header{
   align-items: center;
 }
 
-.rightHeader a ,
-.rightHeader button{
+.rightHeader a{
   padding-right: 1rem;
 }
 
@@ -29,9 +30,9 @@ header{
 }
 
 main{
+  display: grid;
   place-items: center;
-  margin:2rem;
-  border-radius:1.6rem;
+  width: 100%;
 }
 
 
@@ -53,12 +54,17 @@ footer p{
   font-size: small;
 }
 
+main h1{
+  margin: 0px;
+}
+
 @media (max-width: 642px){
   main p{
     font-size:0.5rem;
   }
   main h1{
     font-size:2em;
+    margin: 0px;
   }
   main h3{
     font-size: 1em;
@@ -74,13 +80,15 @@ footer p{
   }
 
   .rightHeader a{
-    font-size: 0.7em; 
-    padding-right: 0.3rem;
+    font-size: 0.8em; 
+    padding-right: 0.4rem;
+
   }
 
   button {
-    padding: 0.3em 1em;
-    font-size: 0.7em;
+    padding: 0.3em 0.8em;
+    font-size: 0.6em;
+    border-radius: 4px;
   }
   
   #companyName{
@@ -93,6 +101,23 @@ footer p{
 
   main{
     margin-top: 0px;
+  }
+}
+
+@media(max-width: 385px){
+  .rightHeader a{
+    font-size: 0.6em; 
+    padding-right: 0.3rem;
+  }
+
+  button {  
+    padding: 0.2em 0.9em;
+    font-size: 0.5em;
+    border-radius: 4px;
+  }
+
+  #companyName{
+    font-size: 1.3rem;
   }
 }
 

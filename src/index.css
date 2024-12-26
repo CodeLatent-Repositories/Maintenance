@@ -2,11 +2,6 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color:white;
-  background-color: black;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -34,6 +29,7 @@ body {
 h1 {
   font-size: 3em;
   margin: 0px;
+  color: #038080;
 }
 
 button {
@@ -72,13 +68,9 @@ button:focus-visible {
 .textDiv{
   place-items: center;
   padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 main p{
   margin: 0px;
-}
-
-main h1{
-  color: #038080;
 }
